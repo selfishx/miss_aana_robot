@@ -17,7 +17,7 @@ from tg_bot.modules import ALL_MODULES
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
-PM_START_TEXT = """ HEY THERE MY NAME IS VARENA ROBO. I AM A GROUP MANAGEMENT BOT PLZZ ADD ME IN YOUR GROUP
+PM_START_TEXT = """ HEY THERE MY NAME IS MISS ANNA . I AM A GROUP MANAGEMENT BOT ADD ME IN YOUR GROUP 
 
 ───────────────────
 × *I'ᴍ  Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
@@ -148,9 +148,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://t.me/classy_network")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Infinity_bots_support"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/INFINITY_BOTZ")],
-                     [InlineKeyboardButton(text="🎬support channel", url="https://t.me/INFINITY_BOTZ"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 REPO", url="https://t.me/anna_support_grp")],
+                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Anna_support_grp"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/annaa_support98")],
+                     [InlineKeyboardButton(text="🎬chatting channel", url="https://t.me/anna_support_grp"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
